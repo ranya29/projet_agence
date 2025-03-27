@@ -1,0 +1,308 @@
+/*reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    --primary:#f1c40f
+}
+/*3malna declaration mta3 varible hatina  fehal couleur bech najmou n3aytoulha wa9t man7ebou*/
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #eee;
+    color:#333
+}
+h1,h2,h3,h4{
+    margin-bottom: 1rem ;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+strong{
+    color:  var(--primary);
+    /*na3mlou appel ll fonction leli khdemneha*/
+    font-weight: 400;
+}
+.container{
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+   
+
+}
+.title{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+.bg-dark{
+    background-color:  #333;
+    color: white;
+
+}
+
+/* vp+header */
+.vp-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    max-width: 900px;
+    color: white;
+}
+header{
+    padding: 1rem 2rem;
+    background-color: #333;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    line-height: 1.8rem;
+}
+.vp-logo{
+    margin-bottom: 0;
+    font-family:"Liu Jian Mao Cao", cursive;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.vp-logo a{
+    font-size:1.8rem;
+}
+.vp-logo i{
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-right:-0.5rem;
+}
+header ul{
+    display:flex;
+    flex-flow: row nowrap;
+    list-style:none;
+}
+header ul li{
+    padding: 0 1rem;
+}
+header ul li a:hover{
+    color: var(--primary)
+}
+
+
+
+/*partie1 */
+.vp{
+    flex:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/frame.jpg);
+    height:100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+.vp-content{
+    max-width: 800px;
+    text-align: center;
+    color:white
+}
+.vp-content h1{
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+.vp-content p {
+    font-size: 1.8rem;
+    font-weight:300 ;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+/*partie2 section offer*/
+
+.offer{
+    padding: 10rem 1rem;
+
+}
+.offer-list{
+    display: flex;
+    flex:row nowrap;
+    list-style: none;
+
+}
+.offer-element{
+    margin:1rem;
+    background-color: white;
+    border:1px solid #ddd ;
+    flex:1;
+    box-shadow:0px 6px 15px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease-in-out,box-shadow 0.2 ease-in-out;
+}
+.offer-element:hover{
+    transform: translate(-5px);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+.offer-elem-img{
+    width: 100%;
+}
+.offer-elem-text{
+    padding:2rem;
+    text-align: center;
+}
+.offer-separ{
+    background-color: #333;
+    width: 50px;
+    height: 2px;
+    margin: 1rem auto;
+}
+
+/*partie3 notre equipe*/
+
+.who{
+display:flex;
+flex:row nowrap;
+
+}
+.who-content-img{
+    flex:1;
+}
+.who-content-text{
+    flex:1rem;
+    padding:4rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+}
+.who-content-img img {
+    width: 100%;
+}
+.who-content-text p{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+.who-content-text h2{
+    margin-bottom: 2rem;
+}
+
+/*partie4 nous*/
+.nous {
+    padding: 5rem 1rem;
+    width: 1625px;
+}
+
+.nous-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.nous-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.nous-element {
+    flex: 1;
+    background: white;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.nous-element-text {
+    padding: 0 2rem;
+}
+
+.nous-element-text p i {
+    margin: 0.2rem;
+}
+
+.nous-element-profil {
+    text-align: center;
+}
+
+.nous-element-profil p {
+    margin-bottom: 0.5rem;
+    max-width: 450px;
+}
+.strg{
+    font-weight: 700;
+}
+.nous-element-reverse {
+    flex-direction: row-reverse;
+}
+.gp {
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+.g{
+    max-width: 20px;
+}
+
+
+
+
+
+
+/*partie4 contact*/
+.contact{
+    background-color: #333;
+    width: 100%;
+    height: 850px;
+    margin-top: 5rem;
+}
+h2{
+    padding: 50px;
+    color:white;
+}
+.contact-z{
+    text-align: center;
+}
+input {
+    background: #333;
+    border: 0;
+    border-bottom: 1px solid #555;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: white;
+    outline: 0;
+    margin-bottom: 1rem;}
+ .b {
+    margin-top: 50px;
+    background: var(--primary);     
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;       
+     border-radius: 25px;
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+    
+    }
+    
+.b:hover {
+    background: #ff0000;      
+    border: 1px solid black;
+    }
+footer{        
+    padding: 1rem 2rem;
+    background-color: #404040;
+    height: 100px;
+
+}
+footer p {
+    margin-top: 23px;
+    color:white;
+    text-align: center;
+}
